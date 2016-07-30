@@ -1,0 +1,9 @@
+program
+
+
+
+begin
+
+
+	write(22);
+end;

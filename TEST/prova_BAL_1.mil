@@ -1,0 +1,17 @@
+program
+   var x : int;
+   var y : int;
+
+begin
+
+   x := 1;
+   y := 2;
+
+   if (true) then
+     write(22);
+   else
+     write(12);
+
+
+
+end;

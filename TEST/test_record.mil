@@ -1,0 +1,71 @@
+program
+
+record PIPPO
+  begin
+    var c1: int;
+    var c2: array[5] of int;
+    var c3: PIPPO;
+  end;
+
+record PLUTO
+  begin
+    var a1: float;
+    var a2: PIPPO;
+  end;
+
+var v1: array[5] of int;
+var v2: array[5] of int;
+
+var rec1: PIPPO;
+var rec2: PLUTO;
+var    x: int;
+var    y: int;
+var    z: int;
+var    r: float;
+
+
+
+begin
+
+  x:=5;
+  y:=x - 1;
+  z:=20;
+  r:=4.4;
+
+  v1[0]:=0;
+
+  for i := 0 to y do
+    begin
+      v1[i]:=i;
+      v1[0]:=0;
+    end;
+  for i := 0 to x - 1 do
+    begin
+      v1[i]:=i;
+    end;
+  for i := 0 to x - 1 do
+      v2[i]:=i + 2;
+
+  v1:=v2;
+
+  rec1.c1:=x;
+  rec1.c2:=v1;
+  rec1.c3:=rec1;
+
+  rec1.c3.c3:=rec1;
+
+  rec2.a1:=r;
+  rec2.a2:=rec1;
+
+  z:=rec2.c1;
+
+
+  rec1:=rec2;
+
+  if (rec1<=rec2) then
+    write(1111);
+  else
+    write(2222);
+
+  write(z);
+end;

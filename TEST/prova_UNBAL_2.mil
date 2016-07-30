@@ -1,0 +1,35 @@
+program
+   var x : int;
+   var i : int;
+   var y : int;
+
+begin
+   x := 12;
+   begin
+      x:=3;
+      write(x);
+      write(x);
+   end;
+   if (1<2) then
+   if (2<3) then
+     write(x);
+
+   if (0<1) then
+     x:=4;
+   else
+   if (0<67) then
+     x:=4;
+
+   if (34<35) then
+     for i := 1 to 20 do
+       if (i<10) then
+         x:=4;
+       else
+         if (0<0) then
+           if (true) then 
+             x:=4;
+
+
+
+
+end;

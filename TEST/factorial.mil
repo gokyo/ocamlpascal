@@ -1,0 +1,26 @@
+program
+   var x : int;
+   var f : int;
+
+   function fact(a: int): int
+      var b : int;
+
+   begin
+      if(a = 0) then
+         fact := 1;
+      else begin
+         b := call fact(a - 1);
+         fact := a * b;
+		end;
+   end;
+
+   procedure print(a: int)
+   begin
+      write(a);
+   end;
+
+begin
+	x := 12;
+   f := call fact(x);
+   call print(f);
+end;

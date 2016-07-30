@@ -1,0 +1,14 @@
+program
+   var x : int;
+   var y : int;
+
+begin
+   x := 12;
+   begin
+      x:=3;
+      write(x);
+      write(x);
+   end;
+   write(x);
+   write(0);
+end;

@@ -1,0 +1,22 @@
+program
+   var x : int;
+   var y : int;
+
+   function f(): int
+   begin
+      x := 1;
+      f := -1;
+   end;
+
+   procedure print(a: int)
+   begin
+     write(a);
+   end;
+
+begin
+   x := 0;
+   call print(x);
+   y := call f();
+   call print(x);
+   call print(y);
+end;

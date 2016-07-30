@@ -1,0 +1,15 @@
+program
+   var j : int;
+   var i : int;
+
+   procedure proc()
+
+     begin
+       for i:= j - 3 to j * j do
+         write(i);
+     end;
+
+begin
+	j := 11;
+   call proc();
+end;

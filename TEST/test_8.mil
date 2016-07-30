@@ -1,0 +1,17 @@
+program
+   var v1: array[5] of int;
+   var v2: array[5] of int;
+   var  i: int;
+   var  n: int;
+begin
+   n := 4;
+   for i := 0 to n do
+     begin
+       v1[i]:= i; write(v1[i]);
+     end;
+   for i := 0 to n do
+     begin
+       v2[i]:= v1[n-i];
+       write(v2[i]);
+     end;
+end;

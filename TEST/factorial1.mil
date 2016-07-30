@@ -1,0 +1,19 @@
+program
+   var x : int;
+   var f : int;
+
+   procedure fact(n: int, res: int)
+     begin
+       if (n = 0) then
+         f := res;
+       else
+         begin
+           call fact(n - 1, res * n);
+ 		 end;
+     end;
+
+begin
+   x := 12;
+   call fact(x,1);
+   write(f);
+end;

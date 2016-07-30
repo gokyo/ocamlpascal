@@ -1,0 +1,25 @@
+program
+
+   var a: array[3,2] of int;
+   var i: int;
+   var j: int;
+   var cnt: int;
+
+begin
+   cnt := 0;
+   for i := 0 to 2 do
+     begin
+       for j := 0 to 1 do
+         begin
+	       a[i,j]:= cnt;
+           cnt := cnt + 1;
+         end;
+     end;
+   for i := 0 to 2 do
+     begin
+       for j := 0 to 1 do
+         begin
+           write(a[i,j]);
+         end;
+     end;
+end;
